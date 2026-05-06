@@ -29,7 +29,8 @@ linear skip path. Implementation builds on
 .
 ├── networks.py   # SpikingCSINet / SpikingCSINetPR
 ├── dataset.py    # COST2100 loaders, preprocessing, CSI augmentation
-└── train.py      # training + evaluation entry point
+├── train.py      # training + evaluation entry point
+└── data/         # COST2100 .mat files (see Data section below)
 ```
 
 ## Requirements
@@ -102,7 +103,7 @@ provided.
 ## Acknowledgement
 
 This work would not have been possible without the open-source contributions
-of the deep-learning-based CSI feedback community. We are
+of the deep-learning-based CSI feedback community. We are particularly
 grateful to the authors of the following projects, whose codebases inspired
 or informed parts of our implementation:
 
@@ -111,6 +112,9 @@ or informed parts of our implementation:
 - **TransNet** — [Treedy2020/TransNet](https://github.com/Treedy2020/TransNet)
 
 We also thank Chao-Kai Wen and Shi Jin's group for releasing the
+pre-processed COST2100 dataset that the entire line of work builds on, and
+the [SpikingJelly](https://github.com/fangwei123456/spikingjelly) team for
+their SNN framework.
 pre-processed COST2100 dataset that the entire line of work builds on, and
 the [SpikingJelly](https://github.com/fangwei123456/spikingjelly) team for
 their SNN framework.
